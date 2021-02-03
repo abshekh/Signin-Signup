@@ -1,0 +1,76 @@
+body {
+  background:url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.center-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* make all the cards of equal length, even when switching panes */
+.consistent-height .tab-content {
+  display: flex;
+}
+
+.consistent-height .tab-content > .tab-pane {
+  display: block; /* undo "display: none;" */
+  visibility: hidden;
+  margin-right: -100%;
+  width: 100%;
+}
+
+.consistent-height .tab-content > .active {
+  visibility: visible;
+}
+/* */
+
+/* push sign in and sign up to the bottom of card */
+.flex-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.push-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* */
+
+/* animation */
+
+/* .tab-pane.active {
+  animation: slide-down 2s ease-out;
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateY(100%); }
+  100% { opacity: 1; transform: translateY(0); }
+} */
+
+
+.tab-pane.active {
+  animation: opac 1.0s;
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* */
