@@ -1,9 +1,9 @@
 body {
-  background:url(img/background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed !important;
-  background-position: center;
+  background:url(img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
+  -moz-background-size: cover;
 }
 
 .center-container {
